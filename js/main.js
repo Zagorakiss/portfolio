@@ -45,7 +45,9 @@ jQuery(document).ready(function(){
 		} else if ( $(this).parent('li').prev('li').prev('li').prev('li').is('.current')  && (mq == 'desktop') ) {
 			nextSides(projectsSlider);
 		} else {
-			singleProjectContent.addClass('is-visible');
+			var id= jQuery(this).attr('href');
+		//singleProjectContent.addClass('is-visible');
+			jQuery(''+id+'').addClass('is-visible');
 		}
 	});
 
